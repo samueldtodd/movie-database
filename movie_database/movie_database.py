@@ -96,8 +96,3 @@ def save_to_db(movie_id, data, db_conn):
         (movie_id, data['title'], data["poster_path"], json.dumps(data))
     )
     db_conn.commit()
-
-movie_repository([523, 521], {'host': os.getenv("POSTGRES_HOST"),
-'database': os.getenv("POSTGRES_DB"),
-'user': os.getenv("POSTGRES_USER"),
-'password': os.getenv("POSTGRES_PASSWORD")}, api_key)
