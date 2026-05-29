@@ -3,10 +3,14 @@ name = "movie-database"
 version = "0.1.0"
 description = "Reusable movie database utilities"
 authors = [
-    {name = "Samuel Todd"}
+    { name = "Samuel Todd" }
 ]
 requires-python = ">=3.9"
 
+dependencies = [
+    "psycopg2-binary>=2.9.12,<3.0.0"
+]
+
 [build-system]
-requires = ["setuptools>=61", "psycopg2-binary (>=2.9.12,<3.0.0)"]
+requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
