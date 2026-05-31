@@ -1,16 +1,7 @@
 import psycopg2
-import os
 import requests
 import json
-from dataclasses import dataclass
-from dotenv import load_dotenv
 from psycopg2 import OperationalError
-
-
-load_dotenv()
-
-api_key = os.getenv("TMDB_API_KEY")
-
 
 class Database:
     def __init__(self, config):
@@ -96,3 +87,4 @@ def save_to_db(movie_id, data, db_conn):
         (movie_id, data['title'], data["poster_path"], json.dumps(data))
     )
     db_conn.commit()
+

@@ -5,7 +5,7 @@ description = "Reusable movie database utilities"
 authors = [
     { name = "Samuel Todd" }
 ]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 
 dependencies = [
     "psycopg2-binary>=2.9.12,<3.0.0",
