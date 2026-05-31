@@ -1,2 +1,2 @@
-test.py
-poetry.lock
+./test.py
+./poetry.lock
