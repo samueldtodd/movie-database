@@ -119,7 +119,7 @@ def get_person_from_db(person_id, db_conn):
         print("✅ Found in database")
         return {
             "image_url": "https://media.themoviedb.org/t/p/w600_and_h900_face" + result[1],
-            "person": result[0]
+            "name": result[0]
         }
         
 def get_person_from_tmdb(person_id, api_key):
