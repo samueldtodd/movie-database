@@ -1,1 +1,1 @@
-from .movie_database import get_movie
+from .movie_database import get_movie, get_person
